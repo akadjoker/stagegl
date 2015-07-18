@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="stagegl" package="com.djokersoft.stagegl" version="1.0.0" company="Luis Santos AKA DJOKER" />
+	
+	<!-- output -->
+	<app main="Main" file="stagegl" path="bin" />
+	
+	<window depth-buffer="true" />
+	<window stencil-buffer="true" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	<haxedef name="dom" />
+	<haxelib name="openfl" />
+
+	
+	<!-- assets -->
+	
+	<assets path="assets"  exclude="*.svg" />
+	<icon path="assets/openfl.svg" />
+	
+	<!-- optimize output
+	<haxeflag name="-dce full" /> -->
+	
+</project>
